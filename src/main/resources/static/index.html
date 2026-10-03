@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epic — Telemetría</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top">Epic</a>
+    <nav class="nav">
+      <a href="#panel">Lecturas</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero hero-compact">
+      <p class="brand-mark">Epic 5</p>
+      <h1>Lecturas del sensor, en un solo lugar.</h1>
+      <p class="lede">Envía una medición y ve el historial con el mínimo, el máximo y el promedio.</p>
+    </section>
+
+    <section id="panel" class="section">
+      <div class="section-head">
+        <h2>Sensor</h2>
+        <p>El mismo identificador sirve para registrar y para consultar.</p>
+      </div>
+
+      <form id="reading-form" class="panel-form">
+        <div class="field-grid">
+          <label>
+            Id del sensor
+            <input id="sensor-id" name="sensorId" value="sensor-01" required maxlength="64" autocomplete="off" />
+          </label>
+          <label>
+            Métrica
+            <select id="metric" name="metric" required>
+              <option value="TEMPERATURE">Temperatura</option>
+              <option value="HUMIDITY">Humedad</option>
+            </select>
+          </label>
+          <label>
+            Valor medido
+            <input id="value" name="value" type="number" step="any" required placeholder="23.5" />
+          </label>
+          <label>
+            Marca de tiempo
+            <input id="recorded-at" name="recordedAt" type="datetime-local" />
+          </label>
+        </div>
+        <div class="cta-row">
+          <button class="btn btn-primary" type="submit">Enviar lectura</button>
+          <button class="btn btn-ghost" id="refresh" type="button">Ver lecturas</button>
+        </div>
+        <p id="status" class="form-status" role="status"></p>
+      </form>
+
+      <div id="stats" class="stats" aria-live="polite"></div>
+      <div id="readings" class="product-list" aria-live="polite"></div>
+    </section>
+  </main>
+  <script src="/js/app.js"></script>
+</body>
+</html>

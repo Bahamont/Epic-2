@@ -213,3 +213,17 @@ Invoke-RestMethod -Method Post -Uri http://localhost:8080/api/readings `
 Invoke-RestMethod -Uri http://localhost:8080/api/readings/sensor/sensor-01
 Invoke-RestMethod -Uri http://localhost:8080/api/readings/sensor/sensor-01/stats
 ```
+
+## Fotos
+
+### Inicio
+
+![Pantalla de inicio de la telemetría](fotos/01-inicio.png)
+
+### Formulario para enviar una lectura
+
+![Formulario del sensor](fotos/02-formulario.png)
+
+### Estadísticas e historial de lecturas
+
+![Estadísticas y lecturas del sensor](fotos/03-estadisticas.png)

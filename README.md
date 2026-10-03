@@ -1,3 +1,7 @@
+Mauricio De los íos López
+Rodrigo Medellin Salcedo
+Daniel Antonio Ortiz Mendoza
+
 # Epic 5 — Registro de lecturas de sensores IoT
 
 API Spring Boot para recibir telemetría ambiental (temperatura y humedad), guardarla en PostgreSQL y consultar lecturas y estadísticas por sensor.

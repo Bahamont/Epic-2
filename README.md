@@ -1,4 +1,4 @@
-Mauricio De los íos López
+Mauricio De los Ríos López
 Rodrigo Medellin Salcedo
 Daniel Antonio Ortiz Mendoza
 

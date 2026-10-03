@@ -1,5 +1,7 @@
 Mauricio De los Ríos López
+
 Rodrigo Medellin Salcedo
+
 Daniel Antonio Ortiz Mendoza
 
 # Epic 5 — Registro de lecturas de sensores IoT
